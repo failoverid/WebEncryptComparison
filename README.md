@@ -29,6 +29,13 @@ A modern, responsive, client-side benchmarking dashboard for comparing symmetric
 ## License
 MIT
 
+## Contributors
+
+- Alfansyah Putra Raja Dinata
+- Alfaiz Arifin Setia Budi
+- Muhammad Althafino
+- Muhammad Muflih Affandi
+
 ---
 
 [GitHub Repository](https://github.com/failoverid/WebEncryptComparison)
