@@ -1,40 +1,34 @@
+# Web Encrypt Comparison
 
-# Symmetric Encryption Performance Comparator
-
-This is a web-based application built with Next.js, TypeScript, and Tailwind CSS. It allows users to test and compare the performance of AES, Twofish, and Camellia symmetric encryption algorithms in various modes (CBC, CFB, OFB, CTR) on uploaded files (text, image, PDF). All encryption is performed client-side. The app provides performance metrics and visualizations, and is fully containerized for local use.
+A modern, responsive, client-side benchmarking dashboard for comparing symmetric encryption algorithms (AES, Twofish, Camellia) and modes (CBC, CFB, OFB, CTR) on files in the browser.
 
 ## Features
-- Upload files (text, image, PDF)
-- Select encryption algorithm and mode
-- View encryption results: file name, size, type, algorithm, mode, encryption time, CPU/memory usage (if feasible), ciphertext snippet
-- Performance visualization (Chart.js or Recharts)
-- Responsive UI
-- 100% client-side (no backend)
-- Dockerized for easy local deployment
+- Pure JavaScript/TypeScript implementation (no WebCrypto, no native bindings)
+- Compare AES, Camellia, and Twofish (all in JS)
+- Modes: CBC, CFB, OFB, CTR (where supported)
+- File upload and benchmarking (multiple runs)
+- Performance chart and statistics (min, max, avg, std dev)
+- Export results to XLSX
+- Modern UI with shadcn/ui, dark mode, and responsive layout
+- Dockerized for easy deployment
 
-## Getting Started
+## Usage
+1. Upload a file
+2. Select algorithm, mode, and number of runs
+3. Click **Encrypt & Measure**
+4. View performance chart and stats
+5. Export results as XLSX if needed
 
-### Local Development
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Run the development server:
-   ```bash
-   npm run dev
-   ```
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+> **Note:** All cryptography is for educational/demo purposes only. Do not use for real security.
 
-### Docker
-1. Build the Docker image:
-   ```bash
-   docker build -t encryption-comparator .
-   ```
-2. Run the container:
-   ```bash
-   docker run -p 3000:3000 encryption-comparator
-   ```
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Development
+- Next.js + TypeScript + shadcn/ui
+- All crypto logic runs in the browser
+- No server-side code required
 
 ## License
 MIT
+
+---
+
+[GitHub Repository](https://github.com/failoverid/WebEncryptComparison)
