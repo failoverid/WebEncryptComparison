@@ -1,0 +1,3 @@
+<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
+
+This project is a web-based Next.js application for comparing symmetric encryption algorithms (AES, Twofish, Camellia) and modes (CBC, CFB, OFB, CTR) on client-side files. All logic is implemented in the browser using JavaScript/TypeScript. The app includes file upload, algorithm/mode selection, performance measurement, and visualization. All dependencies must use the latest stable versions. The app is containerized with Docker.
