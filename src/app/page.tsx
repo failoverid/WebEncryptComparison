@@ -311,18 +311,22 @@ export default function Home() {
           <div className="font-bold text-xl mb-2">Encryption Info</div>
           <div className="text-[15px] text-muted-foreground leading-relaxed">
             <b>How it works:</b><br />
-            Upload a file, select the encryption mode and number of runs, then click <b>Encrypt &amp; Measure</b>.<br /><br />
-            The app uses AES (client-side) and visualizes the encryption time for each run. Toggle dark mode for a different look!
+            Upload a file, select the encryption algorithm, mode, and number of runs, then click <b>Encrypt &amp; Measure</b>.<br /><br />
+            The app uses AES, Camellia, and Twofish (client-side) and visualizes the encryption time for each run.
           </div>
+          <div className="mt-6"></div>
+          <div className="font-semibold text-sm mb-1">Contributors</div>
+          <ul className="text-xs text-muted-foreground space-y-1 pl-2 list-disc">
+            <li>Alfaiz Arifin Setia Budi</li>
+            <li>Alfansyah Putra Raja Dinata</li>
+            <li>Muhammad Althafino</li>
+            <li>Muhammad Muflih Affandi</li>
+          </ul>
           <div className="flex-1" />
           <div className="text-xs text-muted-foreground pt-2 pb-2">
             <b>Tip:</b> Try different file types and run counts to compare performance.
-            <div className="mt-4 font-semibold text-yellow-600 dark:text-yellow-400">
-              <b>All algorithms are implemented in pure JavaScript for educational and benchmarking purposes only.<br />
-              Do not use this app for real cryptographic security.</b>
-            </div>
             <div className="mt-6 text-center text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Web Encryption Algorithm. All rights reserved.
+              &copy; {new Date().getFullYear()} KDA K1. All rights reserved.
             </div>
           </div>
         </aside>
